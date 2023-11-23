@@ -30,9 +30,3 @@
 ;; change the facial expression, if the Entity includes a Facial-expression
 (defmethod proc-change-face ((f Facial-expression) new-face)
   (setf (expression f) new-face))
-
-(defmethod proc-change-face ((f T) new-face)
-  ;; else, don't do anything
-  (declare (ignore f new-face))
-  )
-
